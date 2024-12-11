@@ -19,3 +19,15 @@ Feature: 斐波那契数列求和验证
     Given 假如我有数字5
     When 计算它的斐波那契值
     Then 应该看到数字5
+    Given 假如我有数字10
+    When 计算它的斐波那契值
+    Then 应该看到数字55
+    Given 假如我有数字-1
+    When 计算它的斐波那契值
+    Then 应该抛出异常
+    Given 假如我有数字 "abc"
+    When 计算它的斐波那契值
+    Then 应该抛出异常
+    Given 假如我有数字None
+    When 计算它的斐波那契值
+    Then 应该抛出异常
